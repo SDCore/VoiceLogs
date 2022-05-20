@@ -33,21 +33,21 @@ client.on("voiceStateUpdate", (oldState, newState) => {
 			chalk`{green > User ${newState.member.user.username}#${newState.member.user.discriminator} Joined VC #${newState.channel.name}.}`
 		);
 
-		var voice = `<t:${time}:f> :microphone2: ${emotes.Join} <@${newState.member.id}> (**${newState.member.user.username}#${newState.member.user.discriminator}**, \`${newState.member.id}\`) joined <#${newState.channel.id}> (**${newState.channel.id}**, \`${newState.channel.id}\`)`;
+		var voice = `<t:${time}:f> :microphone2: ${emotes.Join} <@${newState.member.id}> (**${newState.member.user.username}#${newState.member.user.discriminator}**, \`${newState.member.id}\`) joined <#${newState.channel.id}> (**#${newState.channel.name}**, \`${newState.channel.id}\`)`;
 	} else if (newState.channelId === null) {
 		// User Leaves VC
 		console.log(
 			chalk`{red > User ${oldState.member.user.username}#${oldState.member.user.discriminator} Left VC #${oldState.channel.name}.}`
 		);
 
-		var voice = `<t:${time}:f> :microphone2: ${emotes.Leave} <@${oldState.member.id}> (**${oldState.member.user.username}#${oldState.member.user.discriminator}**, \`${oldState.member.id}\`) joined <#${oldState.channel.id}> (**${oldState.channel.id}**, \`${oldState.channel.id}\`)`;
+		var voice = `<t:${time}:f> :microphone2: ${emotes.Leave} <@${oldState.member.id}> (**${oldState.member.user.username}#${oldState.member.user.discriminator}**, \`${oldState.member.id}\`) joined <#${oldState.channel.id}> (**#${oldState.channel.name}**, \`${oldState.channel.id}\`)`;
 	} else if (oldState.channelId != newState.channelId) {
 		// User Moves VC
 		console.log(
 			chalk`{yellow > User ${oldState.member.user.username}#${oldState.member.user.discriminator} Moved From #${oldState.channel.name} To #${newState.channel.name}.}`
 		);
 
-		var voice = `<t:${time}:f> :microphone2: ${emotes.Move} <@${oldState.member.id}> (**${oldState.member.user.username}#${oldState.member.user.discriminator}**, \`${oldState.member.id}\`) Move From <#${oldState.channel.id}> (**${oldState.channel.id}**, \`${oldState.channel.id}\`) To <#${newState.channel.id}> (**${newState.channel.id}**, \`${newState.channel.id}\`)`;
+		var voice = `<t:${time}:f> :microphone2: ${emotes.Move} <@${oldState.member.id}> (**${oldState.member.user.username}#${oldState.member.user.discriminator}**, \`${oldState.member.id}\`) Move From <#${oldState.channel.id}> (**#${oldState.channel.name}**, \`${oldState.channel.id}\`) To <#${newState.channel.id}> (**#${newState.channel.name}**, \`${newState.channel.id}\`)`;
 	}
 
 	if (voice == null)
