@@ -1,0 +1,2 @@
+live bot: https://discord.com/api/oauth2/authorize?client_id=976994666828398612&permissions=37080064&scope=bot
+dev bot: https://discord.com/api/oauth2/authorize?client_id=976998541727780914&permissions=37080064&scope=bot
