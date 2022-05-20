@@ -47,7 +47,7 @@ client.on("voiceStateUpdate", (oldState, newState) => {
 			chalk`{yellow > User ${oldState.member.user.username}#${oldState.member.user.discriminator} Moved From #${oldState.channel.name} To #${newState.channel.name}.}`
 		);
 
-		var voice = `<t:${time}:f> :microphone2: ${emotes.Move} <@${oldState.member.id}> (**${oldState.member.user.username}#${oldState.member.user.discriminator}**, \`${oldState.member.id}\`) Move From <#${oldState.channel.id}> (**#${oldState.channel.name}**, \`${oldState.channel.id}\`) To <#${newState.channel.id}> (**#${newState.channel.name}**, \`${newState.channel.id}\`)`;
+		var voice = `<t:${time}:f> :microphone2: ${emotes.Move} <@${oldState.member.id}> (**${oldState.member.user.username}#${oldState.member.user.discriminator}**, \`${oldState.member.id}\`) Moved From <#${oldState.channel.id}> (**#${oldState.channel.name}**, \`${oldState.channel.id}\`) To <#${newState.channel.id}> (**#${newState.channel.name}**, \`${newState.channel.id}\`)`;
 	}
 
 	if (voice == null)
