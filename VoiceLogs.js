@@ -2,7 +2,7 @@ const { Client, Collection, Intents } = require("discord.js");
 const { discord } = require("./config.json");
 
 const client = new Client({
-	intents: [Intents.FLAGS.GUILD_VOICE_STATES],
+	intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_VOICE_STATES],
 	allowedMentions: { users: [] },
 });
 
