@@ -2,7 +2,7 @@
 	"name": "voicelogs",
 	"version": "0.0.1",
 	"description": "Voice logger for the Apex Legends discord server.",
-	"main": "index.js",
+	"main": "VoiceLogs.js",
 	"scripts": {
 		"dev": "nodemon"
 	},
@@ -11,6 +11,8 @@
 	"dependencies": {
 		"chalk": "4.1.2",
 		"discord.js": "13.6.0",
-		"luxon": "^2.4.0"
+		"glob": "7.2.0",
+		"luxon": "2.3.0",
+		"promisify": "0.0.3"
 	}
 }
