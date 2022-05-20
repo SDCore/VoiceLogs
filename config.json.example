@@ -1,8 +1,5 @@
 {
 	"discord": {
 		"token": "Bot Token"
-	},
-	"logs": {
-		"Category ID": "Log Channel ID"
 	}
 }
