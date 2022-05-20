@@ -40,7 +40,7 @@ client.on("voiceStateUpdate", (oldState, newState) => {
 			chalk`{red > User ${oldState.member.user.username}#${oldState.member.user.discriminator} Left VC #${oldState.channel.name}.}`
 		);
 
-		var voice = `<t:${time}:f> :microphone2: ${emotes.Leave} <@${oldState.member.id}> (**${oldState.member.user.username}#${oldState.member.user.discriminator}**, \`${oldState.member.id}\`) joined <#${oldState.channel.id}> (**#${oldState.channel.name}**, \`${oldState.channel.id}\`)`;
+		var voice = `<t:${time}:f> :microphone2: ${emotes.Leave} <@${oldState.member.id}> (**${oldState.member.user.username}#${oldState.member.user.discriminator}**, \`${oldState.member.id}\`) left <#${oldState.channel.id}> (**#${oldState.channel.name}**, \`${oldState.channel.id}\`)`;
 	} else if (oldState.channelId != newState.channelId) {
 		// User Moves VC
 		console.log(
