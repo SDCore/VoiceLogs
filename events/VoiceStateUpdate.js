@@ -13,7 +13,7 @@ client.on("voiceStateUpdate", (oldState, newState) => {
 			log[oldState.channel.parent.id] == "undefined"
 		)
 			return console.log(
-				chalk`{red.bold > Could not log voice state update because it's category is not in the log list.}`
+				chalk`{red.bold > Could not log voice state update because its category is not in the log list.}`
 			);
 	}
 
@@ -23,7 +23,7 @@ client.on("voiceStateUpdate", (oldState, newState) => {
 			log[newState.channel.parent.id] == "undefined"
 		)
 			return console.log(
-				chalk`{red.bold > Could not log voice state update because it's category is not in the log list.}`
+				chalk`{red.bold > Could not log voice state update because its category is not in the log list.}`
 			);
 	}
 
