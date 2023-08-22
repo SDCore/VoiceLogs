@@ -1,5 +1,5 @@
-const { client } = require("../VoiceLogs.js");
 const chalk = require("chalk");
+const { client } = require("../VoiceLogs.js");
 
 client.once("ready", (client) => {
 	console.log(

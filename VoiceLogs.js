@@ -1,5 +1,7 @@
+const dotenv = require("dotenv");
 const { Client, GatewayIntentBits } = require("discord.js");
-const { discord } = require("./config.json");
+
+dotenv.config();
 
 const client = new Client({
 	intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildVoiceStates],
@@ -10,4 +12,4 @@ module.exports = { client };
 
 require("./handler.js")(client);
 
-client.login(discord.token);
+client.login(process.env.DISCORD_TOKEN);
