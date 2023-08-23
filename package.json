@@ -1,6 +1,6 @@
 {
 	"name": "voicelogs",
-	"version": "0.1.0",
+	"version": "0.2.0",
 	"description": "Voice logger for the Apex Legends discord server.",
 	"main": "VoiceLogs.js",
 	"scripts": {
