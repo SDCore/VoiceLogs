@@ -1,5 +1,5 @@
-const dotenv = require("dotenv");
-const { Client, GatewayIntentBits } = require("discord.js");
+const dotenv = require('dotenv');
+const { Client, GatewayIntentBits } = require('discord.js');
 
 dotenv.config();
 
@@ -10,6 +10,6 @@ const client = new Client({
 
 module.exports = { client };
 
-require("./handler.js")(client);
+require('./handler.js')(client);
 
 client.login(process.env.DISCORD_TOKEN);
